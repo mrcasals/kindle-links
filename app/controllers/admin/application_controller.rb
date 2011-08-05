@@ -9,7 +9,4 @@ class Admin::ApplicationController < ActionController::Base
     end
   end
 
-  def attributes
-    resource_class.attribute_names - %w(id created_at updated_at)
-  end
 end

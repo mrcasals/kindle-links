@@ -3,10 +3,10 @@ table
     tr
       -attributes.each do |attribute|
         th =resource_class.human_attribute_name attribute
-      th &nbsp:
+      th &nbsp;
   tbody
     -collection.each do |resource|
-      tr class="#{ resource_class.underscorize }" id="#{resource_class.underscorize}_#{resource.id}"
+      tr class="#{ resource_class.to_s.underscore }" id="#{resource_class.to_s.underscore}_#{resource.id}"
         -attributes.each do |attribute|
           td =resource.public_send(attribute).to_s
         td
