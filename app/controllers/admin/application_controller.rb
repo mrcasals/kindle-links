@@ -8,4 +8,8 @@ class Admin::ApplicationController < ActionController::Base
       redirect_to :back
     end
   end
+
+  def attributes
+    resource_class.attribute_names - %w(id created_at updated_at)
+  end
 end
