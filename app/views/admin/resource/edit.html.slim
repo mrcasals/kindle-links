@@ -1,3 +1,11 @@
-h2 ="Edit #{resource_class.model_name.human}"
+.block
+  .content
+    h2 ="Edit #{resource_class.model_name.human}"
+    .inner
+      =render "form", attributes: attributes
 
-=render "form", attributes: attributes
+-content_for :sidebar do
+  .block
+    h3 Navigation
+    ul.navigation
+      li =link_for "Back", resource_path

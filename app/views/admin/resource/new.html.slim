@@ -1,3 +1,12 @@
-h2 ="New #{resource_class.model_name.human}"
+.block
+  .content
+    h2 ="New #{resource_class.model_name.human}"
 
-=render "form", attributes: attributes
+    .inner
+      =render "form", attributes: attributes
+
+-content_for :sidebar do
+  .block
+    h3 Navigation
+    ul.navigation
+      li = link_to "Back", resource_path
