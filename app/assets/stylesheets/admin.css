@@ -1,0 +1,7 @@
+/*
+ *= require_self
+ *= require web-app-theme/base
+ *= require web-app-theme/style
+*/
+
+body {background-color: #ccc}
