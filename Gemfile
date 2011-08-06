@@ -6,6 +6,8 @@ gem 'inherited_resources'
 gem 'slim'
 gem 'simple_form'
 
+gem 'heroku'
+
 group :assets do
   gem 'sass-rails'
   gem 'compass', git: 'git://github.com/chriseppstein/compass.git', branch: 'rails31'
