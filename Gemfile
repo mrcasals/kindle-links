@@ -13,10 +13,6 @@ group :assets do
   gem 'compass', git: 'git://github.com/chriseppstein/compass.git', branch: 'rails31'
 end
 
-group :develop do
+group :development do
   gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
 end
