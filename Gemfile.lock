@@ -70,7 +70,6 @@ GEM
     mime-types (1.16)
     multi_json (1.0.3)
     orm_adapter (0.0.5)
-    pg (0.11.0)
     polyglot (0.3.2)
     rack (1.3.2)
     rack-cache (1.0.2)
@@ -137,7 +136,6 @@ DEPENDENCIES
   devise
   heroku
   inherited_resources
-  pg
   rails (= 3.1.0.rc5)
   sass-rails
   simple_form
