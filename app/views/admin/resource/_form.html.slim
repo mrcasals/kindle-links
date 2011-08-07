@@ -1,4 +1,4 @@
-=simple_form_for [:admin, resource] do |form|
+=simple_form_for [:admin, resource], html: {novalidate: true} do |form|
   -attributes.each do |attribute|
     =form.input attribute
   =form.submit
