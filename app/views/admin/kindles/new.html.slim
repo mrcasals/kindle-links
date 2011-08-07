@@ -1,0 +1,12 @@
+.block
+  .content
+    h2 ="New #{resource_class.model_name.human}"
+
+    .inner
+      =render "form", attributes: %w(username nickname )
+
+-content_for :sidebar do
+  .block
+    h3 Navigation
+    ul.navigation
+      li = link_to "Back", admin_kindles_path
