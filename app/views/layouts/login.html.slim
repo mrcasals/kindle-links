@@ -1,0 +1,10 @@
+doctype 5
+html
+  head
+    title Kindle Links
+    = stylesheet_link_tag :login, :cache => true
+    = csrf_meta_tag
+  body
+    #container
+      #box
+        = yield

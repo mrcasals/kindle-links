@@ -1,0 +1,6 @@
+/*
+ *= require_self
+ *= require web-app-theme/base
+ *= require web-app-theme/style
+ *= require_tree ./admin
+*/
