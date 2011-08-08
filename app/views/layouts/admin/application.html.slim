@@ -8,14 +8,14 @@ html
   body
     #container
       #header
-        h1= link_to "Kindle Links", admin_root_path
+        h1= link_to "Kindle Links Admin", admin_root_path
         #user-navigation
           ul.wat-cf
             li= link_to "Profile", edit_user_registration_path
             li= link_to "Settings", "#"
         #main-navigation
           ul.wat-cf
-            li= link_to "Users", admin_users_path
+            li= link_to "All Users", admin_users_path
             li= link_to "Kindles", admin_kindles_path
       #wrapper.wat-cf
         .flash

@@ -11,6 +11,7 @@ gem 'heroku'
 group :assets do
   gem 'sass-rails'
   gem 'compass', git: 'git://github.com/chriseppstein/compass.git', branch: 'rails31'
+  gem 'jquery-rails'
 end
 
 group :development do
