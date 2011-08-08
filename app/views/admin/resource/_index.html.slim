@@ -16,7 +16,7 @@
             th &nbsp;
         tbody
           -collection.each do |resource|
-            tr class="#{ resource_class.to_s.underscore }" id="#{resource_class.to_s.underscore}_#{resource.id}"
+            tr class="#{ resource_class.to_s.underscore } #{cycle('odd', 'even')}" id="#{resource_class.to_s.underscore}_#{resource.id}"
               -attributes.each do |attribute|
                 td =resource.public_send(attribute).to_s
               td
